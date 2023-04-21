@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Chevrolet Camaro 2022<br>Your Dream Car </h2>
+                <h3>Ride in Wealth</h3>
+                <p>Make the haters them hate</p>
+                <h4>#16,118,550</h4>
+                <button type="button">Buy Now<img src="images/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images/car.png" class="car">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                   <a href="#"><h2>TEST DRIVE</h2></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="social-links">
+            <img src="images/fb.png">
+            <img src="images/tw.png">
+            <img src="images/ig.png">
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu () {
+            if (menulist.style.maxHeight =="0px")
+            {
+                menulist.style.maxHeight ="130px";
+            }
+            else
+            {
+                menulist.style.maxHeight ="0px";
+            }
+        }
+    </script>
+</body>
+</html>
